@@ -83,6 +83,9 @@ a:hover {
 	max-width: 1200px;
 	margin-right: auto;
 	margin-left: auto;
+	font-family: var(--font-serif_2);
+
+
 
 }
 
@@ -321,17 +324,20 @@ a:hover {
 }
 
 
+
 /*Tables*/
 
 
 .table {
 	width: 100%;
 	border-collapse: collapse;
+	font-family: var(--font-serif_2);
+
 }
 
 .table th,
 .table td {
-	text-align: left;
+	text-align: center;
 	padding:  0.2em 0.5em;
 }
 
@@ -373,5 +379,170 @@ a:hover {
 }
 
 .figure figcaption  {
-	padding: 1em;	
+	padding: 1em;
 }
+
+.caption-body {
+	font-family: var(--font-serit_2);
+	font-size: 15px;
+	text-align: center;
+}
+
+
+
+/* CARD  */
+.card{
+	font-family: var(--font-serit_2);
+	background-color: var(--color-white);
+	margin-top: 1em;
+	margin-bottom: 1em;
+	padding: 1em;
+
+	overflow: hidden;
+	position: relative;
+}
+
+/* BUTTONS */
+
+.button2,
+.button3,
+.button1{
+	border: none;
+	padding: 0.5em 1em;
+	background-color: transparent;
+	border: 2px solid #2AF5BF;
+	color: #2AF5BF;
+	
+}
+
+.button2 a,
+.button3 a,
+.button1 a{
+	display: inline-block;
+	font-weight: initial;
+}
+.button2 a,
+.round-btn a,
+.button1 a:hover{
+	text-decoration: none;
+
+}
+.button2:hover,
+.button3:hover,
+.button1:hover{
+	background-color: #2AF5BF;
+	transition: all 0.5s;
+}
+
+.button3:hover a,
+.button1:hover a{
+	color: #ffffff;
+
+}
+.button3{
+	border-radius: 2em;
+	margin-left: 1em;
+	font-size: 20px;
+
+
+}
+.button2{
+	background-color:#fff;
+	margin-left: 1em;
+	border: 2px solid #A3A3A3;
+	font-size: 20px;
+}
+
+.button1{
+	background-color:#fff;
+	margin-left: 1em;
+	border: 2px solid #2AF5BF;
+	font-size: 20px;
+}
+.button2 a{
+	color: #A3A3A3;
+}
+.button2:hover{
+	background-color: #A3A3A3;
+}
+.button2:hover a{
+	color: #fff;
+}
+
+
+/* SEARCHBAR */
+
+.searchbar{
+	border-radius: 1em;
+	font-size: 20px;
+	margin-left: 1em;
+}
+
+
+.searchbarinput{
+	border: 2px solid #A3A3A3;
+	background-color: #fff;
+	color: #262626;
+	font-size: 20px;
+}
+
+.form-control{
+	margin: 1em 0;
+	font-size: 20px;
+	border-radius: 0.5em;
+}
+
+/* SELECT */
+
+.items{
+	font-size: 20px;
+}
+
+
+
+.addcart{
+	border: none;
+	padding: 0.5em 1em;
+	background-color: transparent;
+	border: 1px solid #A3A3A3;
+	color: #A3A3A3;
+	display: inline-block;
+	font-weight: initial;
+	font-family: var(--font-serit_2);
+	margin-left: 250px;
+}
+
+.addcart a:hover{
+	text-decoration: none;
+	background-color: #2AF5BF;
+	transition: all 0.5s;
+	color: #ffffff;
+	font-family: var(--font-serit_2);
+
+}
+
+.form-label{
+	font-size: 0.8em;
+	color: var(--color-neutral-medium);
+	display: block;
+	width: 100%;
+}
+
+.form-input:focus{
+	border-bottom-color: var(--color-main-dark);
+	padding: 0.5em 1em;	
+}
+.form-input{
+	display: inline-block;
+	background-color: transparent;
+	border-width: 0;
+	font: inherit;
+	-webkit-appearance: none;
+	color: inherit;
+	width: 100%;
+	outline: 0;
+	border-bottom: 1px solid var(--color-neutral-medium);
+}
+}
+
+
