@@ -469,6 +469,42 @@ a:hover {
 	color: #fff;
 }
 
+/*Toggle*/
+
+.toggle label {
+	font-size: 2em;
+	display: inline-block;
+	width: 2em;
+	height: 1em;
+	border: 0.1em solid #E3E3E3;
+	background-color: #E3E3E3;
+	border-radius: 1em;
+	position: relative;
+}
+
+.toggle label::after {
+	content: '';
+	display: inline-block;
+	width: 0.8em;
+	height: 0.8em;
+	border-radius: 1em;
+	border: 1em;
+	position: absolute;
+	background-color: #fff;
+	transition: all 0.3s;
+}
+
+
+.toggle input:checked + label::after {
+	transform: translatex(1em);
+}
+
+.hidden {display: none;}
+
+
+
+
+
 
 /* SEARCHBAR */
 
@@ -543,6 +579,12 @@ a:hover {
 	outline: 0;
 	border-bottom: 1px solid var(--color-neutral-medium);
 }
-}
+
+    .card.soft {
+       border-radius:0.5em;
+       box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+
 
 
