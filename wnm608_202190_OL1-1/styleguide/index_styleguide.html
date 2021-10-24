@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>CSS Styleguide</title>
+
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="stylesheet" href="../css/storetheme.css">
+	<link rel="stylesheet" href="../lib/css/gridsystem.css">
+	<link rel="stylesheet" href="../lib/css/styleguide.css">
+	
+
+	<script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+	<!--header>h1+P -->
+	<header class="navbar">
+		<div class="container display-flex">
+			<div class="flex-none">
+				<h1>PITC STYLE GUIDE</h1>
+			</div>
+			<div class= "flex-stretch"></div>
+			<nav class="flex-none nav">
+				<ul class="container display-flex">
+					<li><a href="#tableofcontents">Table of Contents</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<div class="container" id="tableofcontents">
+		<h2>Table of Contents</h2>
+			<div class="card">
+				<nav class="nav">
+					<ul>
+						<li><a href="#Typography">1. Typography</a></li>
+					</ul>
+					<ul>
+						<li><a href="#Paragraph">2. Paragraph</a></li>
+					</ul>
+					<ul>
+						<li><a href="#Color">3. Color</a></li>
+					</ul>
+					<ul>
+						<li><a href="#Navigations">4. Navigations</a></li>
+					</ul>
+					<ul>
+						<li><a href="#Table">5. Table</a></li>
+					</ul>
+					<ul>
+						<li><a href="#ProductLists">6. Product Lists</a></li>
+					</ul>
+					<ul>
+						<li><a href="#Input">7. Input</a></li>
+					<ul>
+					<ul>
+						<li><a href="#Buttons">8. Buttons</a></li>
+					</ul>
+					<ul>
+						<li><a href="#Search">9. Search</a></li>
+					</ul>
+					<ul>
+						<li><a href="#Select">10. Select</a></li>
+					</ul>
+					<ul>
+						<li><a href="CheckBoxes">etc. Check Boxes</a></li>
+					</ul>
+				</nav>	
+			</div>
+
+
+
+	<div class="container" id="Typography">
+		<div class="card soft" id="headings">
+			<h2>1. Typography</h2>
+
+			<div class="card soft">
+			<h1>Header 1 : Montserrat (67px)</h1>
+			<h2>Header 2 : Montserrat (28px)</h2>
+			<h3>Header 3 : Montserrat (24px)</h3>
+
+			<p>Body : DIN (16px)</p>
+
+
+			</div>
+		</div>
+		<div class="card soft" id="Paragraph">
+
+			<h2>2. Paragraph</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		</div>
+	</div>
+
+	<div class="container" id="Color">
+		<h2>3. Color</h2>
+
+
+
+		<div class="grid gap">
+			<div class="col-xs-12 col-md-4">
+				<div class="card hard nuetral_light">#FFFFFF</div>
+			</div>	
+			<div class="col-xs-12 col-md-4">
+				<div class="card neutral_medium">#A3A3A3</div>
+			</div>
+			<div class="col-xs-12 col-md-4">
+				<div class="card neutral_dark">#262626</div>
+			</div>		
+		</div>
+
+
+
+		<div class="grid gap">
+			<div class="col-xs-12 col-md-4">
+				<div class="card light">#E3E3E3</div>
+			</div>	
+			<div class="col-xs-12 col-md-4">
+				<div class="card medium">#2AF5BF</div>
+			</div>
+			<div class="col-xs-12 col-md-4">
+				<div class="card dark">#13106B</div>
+			</div>		
+		</div>
+
+
+	<div class="container" id="Navigations">
+		<h2> 4. Navigations</h2>
+
+		<script>
+		const makeNav = (classes='') => {
+			const links = ['PITC', 'SHOP', 'SHOPPING BAG', 'CONTACT US'];
+			let ran = Math.floor(Math.random()*links.length);
+			document.write (`
+			<div>
+				<nav class="${classes}">
+					<ul>
+					${links.reduce((r,o,i)=> {
+						return r+`<li class="${ran==i?'active':''}"><a href="#">${o}</a></li>`;
+					}, '')}
+
+					</ul>
+				</nav>
+			</div>
+
+			`);
+		}
+		</script>
+
+	<div class="card soft">
+		<h3>Main Navigation Menu</h3>
+		<script>makeNav('nav nav-material')</script>
+	</div>
+
+	<script>
+		const makeTable = (classes='') => {
+			const head = ['ORDER', 'STATE', 'NAME', 'EMAIL', 'PHONE'];
+			const body = [
+				['CA', "Trader Jay", 'traderjay@gmail.com', '123.456.7901' ],
+				['CA', "Martin Karon", 'mrtkaron@gmail.com', '594.384.3912'],
+				['TX', "Bread Worid", 'brwdis@hotmail.com', '960.150.4345'],
+				['NY', "August Irene", 'augustri@yahoo.com', '323.451.2348'],
+			];
+			//let ran = Math.floor(Math.random()*Links.Length);
+
+			document.write(`
+			<table class="${classes}">
+				<thead><tr>${head.reduce((r,o)=>r+`<th>${o}</th>`, '')}</tr></thead>
+				<tbody>${body.reduce((r,o,i)=>r+
+					`<tr>${
+						[i+1,...o].reduce((r,o)=>r+`<td>${o}</td>`,'')
+				}</tr>`,'')
+			}</tbody>
+			</table>
+			`);
+		}
+
+	</script>
+
+	<div class="container" id="Table">
+		<h2>5. Tables</h2>
+		<div class="card soft">
+			<h3> [DOMESTIC] ORDER LISTS</h3>
+			
+			<script>makeTable("table lined vertical border striped")</script>
+		</div>
+
+
+		<h2>6. Product Lists </h2>
+
+			<div class="grid gap" id="ProductLists">
+				<div class="col-xs-12 col-md-4">
+					<figure class="figure">
+						<img src="../img/hoodie.png"  alt="">
+						<figcaption>
+							<div class="caption-body">
+								<div>PITC Hoodie</div>
+								<div>$120.00</div>
+							</div>
+							<button class="addcart"><a href="#">ADD CART</a></button>				
+						</figcaption>
+					</figure>
+				</div>
+
+				<div class="col-xs-12 col-md-4">
+					<figure class="figure">
+						<img src="../img/tshirt.png" alt="">
+						<figcaption>
+							<div class="caption-body">
+								<div>PITC Tshirts</div>
+								<div>$90</div>
+							<button class="addcart"><a href="#">ADD CART </a></button>
+							</div>					
+						</figcaption>
+					</figure>
+				</div>
+
+				<div class="col-xs-12 col-md-4">
+					<figure class="figure">
+						<img src="../img/tumbler.png" alt="">
+						<figcaption>
+							<div class="caption-body">
+								<div>PITC Tumbler</div>
+								<div>$25</div>
+								<button class="addcart"><a href="#">ADD CART</a></button>
+							</div>					
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+
+	</div>
+	 		<h2>7. Input</h2>
+	 		<div class="card">
+				<form action="">
+					<div class="form-control">
+						<label for="" class="form-label">ADDRESS</label>
+						<input type="text" placeholder="Address" class="form-input">
+					</div>
+					<div class="form-control">
+						<label for="" class="form-label">QTY</label>
+						<input type="number" placeholder="Number" class="form-input">
+					</div>
+					<div class="form-control">
+						<label for="" class="form-label">Email Address</label>
+						<input type="password" placeholder="Email" class="form-input">
+					</div>
+					<div class="form-control">
+						<label for="" class="form-label">Password</label>
+						<input type="password" placeholder="Password" class="form-input">
+					</div>
+					<div class="form-control display-flex flex-align-center">
+					</div>
+				</form>
+			</div>		
+
+
+ 		<h2>8. Buttons</h2>
+		<div class="card">
+			<div class="display-flex">
+				<button class="button1"><a href="#">CHECKOUT SECURELY</a></button>
+				<button class="button2"><a href="#">CHECKOUT SECURELY</a></button>
+				<button class="button3"><a href="#">CONTINUE</a></button>
+			</div>
+		</div>
+
+		<h2>9. Search</h2>
+		<div class="searchbar">
+			<div class="form-control">
+				<form action="" >
+					<input type="search" class="searchbarinput" placeholder="Search Item">
+				</form>
+			</div>
+		</div>
+
+		<h2> 10. Select</h2>
+		<div class="card">
+			<div class="form-select">
+				<select name="" class="items">
+					<option value="">Standard Shipping</option>
+					<option value="">Premium Shipping (1-2days)</option>
+				</select>
+			</div>
+		</div>
+
+		<h2 id="checkbox">ETC. Check Boxes</h2>
+       <div class="card soft">
+          <h3>Checkbox</h3>
+          <label>Label <input type="checkbox"></label>
+          <label for="input-1">Label</label>
+
+			<h3>Toggle</h3>
+			<div class="toggle">
+				<input type="checkbox" id="toggle-1" class="hidden">
+				<label for="toggle-1"></label>
+			</div>
+
+		</div>
+	</div>
+</body>
+</html>
