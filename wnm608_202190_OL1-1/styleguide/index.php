@@ -15,7 +15,7 @@
 <header class="navbar">
 		<div class="container display-flex">
 			<div class="flext-none">
-				<h1>PITC</h1>
+				<h1>PROJECT IN THE CITY</h1>
 			</div>	
 			<div class="flex-stretch"></div>
 			<nav class="navbar nav nav-flex flex-none">
