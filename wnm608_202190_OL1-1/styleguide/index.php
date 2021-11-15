@@ -21,8 +21,8 @@
 			<nav class="navbar nav nav-flex flex-none">
 				<ul>
 					<!-- li*3>a[href=#]>{Link $} -->
-					<li><a href="index.php">HOME</a>
-					</li>
+					<li><a href="index.php">HOME</a></li>
+					<li><a href="about.php">ABOUT</a></li>
 					<li><a href="product_list.php">SHOP</a></li>
 					<li><a href="shoppingbag.php">SHOPPING BAG</a></li>
 				</ul>

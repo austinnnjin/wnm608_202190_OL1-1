@@ -102,6 +102,8 @@ a:hover {
 .flex-align-center { align-items: center; }
 .flex-justify-center { justify-content: center; }
 
+.flex-column {flex-direction: column;}
+
 
 /* Small Classes */
 
@@ -646,3 +648,36 @@ div {
 	margin: 1em 0 2em;
 }
 
+
+.logobox {
+	width: 800px;
+	margin-top: 10px;
+	margin-left: 300px;
+	margin-right: 300px;
+
+}
+
+.card-section~.card-section{
+	border-top: 1px solid var(--color-neutral-light);
+}
+
+.card-section{
+	padding: 1em;
+}
+
+.form-button{
+	background-color: #E3E3E3;
+	padding: 0.5em 1em;
+	border-radius: 0.2em;
+	cursor: pointer;
+	text-align: center;
+	margin-left: 320px;
+}
+
+.form-button:hover{
+	text-decoration: none;
+	background-color: var(--color-main-medium);
+}
+.form-button:active{
+	background-color: var(--color-neutral-medium);
+}
