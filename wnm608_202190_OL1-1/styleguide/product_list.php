@@ -48,7 +48,7 @@
 		    <li><a href="styleguide/product_item.php?id=2">Banana Chocolate</a></li>-->
 
 			<div class='productlist grid gap'>
-<a class="col-xs-12 col-md-4" href="styleguide/product_item.php?id=12">
+<a class="col-xs-12 col-md-4" href="product_item.php?id=12">
 	<figure class="figure product display-flex flex-column">
 		<div class="flex-stretch">
 			<img src="../img/hoodie.png" alt="">
@@ -62,7 +62,7 @@
 </a>
 
 
-<a class="col-xs-12 col-md-4" href="styleguide/product_item.php?id=11">
+<a class="col-xs-12 col-md-4" href="product_item.php?id=11">
 	<figure class="figure product display-flex flex-column">
 		<div class="flex-stretch">
 			<img src="../img/tshirt.png" alt="">
@@ -76,7 +76,7 @@
 </a>
 
 
-<a class="col-xs-12 col-md-4" href="styleguide/product_item.php?id=10">
+<a class="col-xs-12 col-md-4" href="product_item.php?id=10">
 	<figure class="figure product display-flex flex-column">
 		<div class="flex-stretch">
 			<img src="../img/tumbler.png" alt="">
@@ -90,7 +90,7 @@
 </a>
 
 
-<a class="col-xs-12 col-md-4" href="styleguide/product_item.php?id=9">
+<a class="col-xs-12 col-md-4" href="product_item.php?id=9">
 	<figure class="figure product display-flex flex-column">
 		<div class="flex-stretch">
 			<img src="../img/cap.png" alt="">
@@ -104,7 +104,7 @@
 </a>
 
 
-<a class="col-xs-12 col-md-4" href="styleguide/product_item.php?id=8">
+<a class="col-xs-12 col-md-4" href="product_item.php?id=8">
 	<figure class="figure product display-flex flex-column">
 		<div class="flex-stretch">
 			<img src="../img/candle.png" alt="">
@@ -118,7 +118,7 @@
 </a>
 
 
-<a class="col-xs-12 col-md-4" href="styleguide/product_item.php?id=7">
+<a class="col-xs-12 col-md-4" href="product_item.php?id=7">
 	<figure class="figure product display-flex flex-column">
 		<div class="flex-stretch">
 			<img src="../img/phone.png" alt="">

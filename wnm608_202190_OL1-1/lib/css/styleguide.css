@@ -51,7 +51,6 @@ h3 {
 }
 
 
-
 p {
 	font-family: 'DIN', sans-serif;
 	font-size: 16px;
@@ -80,13 +79,16 @@ a:hover {
 /*LAYOUT CLASSES*/
 
 .container {
-	max-width: 1200px;
+	max-width: 1000px;
 	margin-right: auto;
 	margin-left: auto;
 	font-family: var(--font-serif_2);
+}
 
-
-
+.container2{
+	max-width: 500px;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 
@@ -216,7 +218,7 @@ a:hover {
 
 
 .navbar {
-	background-color: var(--color-main-light);
+	background-color: black;
 	color: var(--color-white);
 	line-height: var(--header-height);
 }
@@ -246,6 +248,7 @@ a:hover {
 
 	.card.soft {
 		box-shadow: 0 0 10px rgba(0,0,0,0.1);
+		text-align: center;
 	}
 
 	.card.hard {
@@ -671,7 +674,7 @@ div {
 	border-radius: 0.2em;
 	cursor: pointer;
 	text-align: center;
-	margin-left: 320px;
+	margin-right: auto;
 }
 
 .form-button:hover{

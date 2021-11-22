@@ -31,7 +31,7 @@
 	</header>
 	<div class="main">
 		<div class="main-wrp display-flex">
-			<img src="../img/main.jpg" alt="" class="main-img">
+			<img src="../img/main.png" alt="" class="main-img">
 
 
 			</div>

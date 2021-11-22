@@ -38,7 +38,7 @@
 	</header>
 
 	<div class="container">
-		<h2>Cart</h2>
+		<h2>SHOPPING BAG</h2>
 		 <div class="grid gap">
 		 	<div class="col-xs-12 col-md-7">
 		 		<div class="card soft">
@@ -103,7 +103,7 @@
 		 				<div class="flex-none">&dollar;300</div>
 		 			</div>
 		 			<div class="card-section">
-		 				<a href="styleguide/product_checkout.php" class="form-button">CHECKOUT</a>
+		 				<a href="checkout.php" class="form-button">CHECKOUT</a>
 		 			</div>
 		 		</div>
 		 	</div>
