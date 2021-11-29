@@ -249,6 +249,7 @@ a:hover {
 	.card.soft {
 		box-shadow: 0 0 10px rgba(0,0,0,0.1);
 		text-align: center;
+		
 	}
 
 	.card.hard {
@@ -684,3 +685,9 @@ div {
 .form-button:active{
 	background-color: var(--color-neutral-medium);
 }
+
+.productsearchbar {
+	width: 1000px;
+}
+
+

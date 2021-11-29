@@ -14,6 +14,12 @@
 <link rel="stylesheet" type="text/css" href="../lib/css/styleguide.css">
 <link rel="stylesheet" type="text/css" href="../lib/css/custom.css">
 
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+
+	<script src="js/functions.js"></script>
+	<script src="js/templates.js"></script>
+	<script src="js/productlist.js"></script>
+
 </head>
 <body>
 	
@@ -41,11 +47,42 @@
 
 
 	<div class="container">
-		<!-- <div class="card soft"> -->
 			<h2>PRODUCT LIST</h2>
-			<!-- ul>li*4>a[href="product_item.php"]>{Product $}
-			<li><a href="styleguide/product_item.php?id=1">Raspberry Chocolate</a></li>
-		    <li><a href="styleguide/product_item.php?id=2">Banana Chocolate</a></li>-->
+
+			<div class="productsearchbar">
+				<form class="searchbar" id="product-search">
+					<input type="search" placeholder="SEARCH" >
+				</form>
+			</div>
+
+						<div class="form-control">
+				<div class="card soft">
+					<div class="display-flex">
+						<div class="flex-stretch display-flex">
+							<div class="flex-none sort">
+								<button data-filter="category" data-value="" type="button" class="form-button">ALL CATEGORIES</button>
+							</div>
+							<div class="flex-none sort">
+								<button data-filter="category" data-value="accessories" type="button" class="form-button ">ACCESSORIES</button>
+							</div>
+							<div class="flex-none sort">
+								<button data-filter="category" data-value="clothing" type="button" class="form-button">CLOTHING</button>
+							</div>
+						</div>
+				
+						<div class="flex-none">
+							<div class="form-select">
+								<select class="js-sort">
+									<option value="1">Latest arrivals</option>
+									<option value="2">Trending</option>
+									<option value="3">Price: Low to hight</option>
+									<option value="4">Price: High to low</option>
+								</select>
+							</div>
+						</div>	
+					</div>	
+				</div>	
+			</div>
 
 			<div class='productlist grid gap'>
 <a class="col-xs-12 col-md-4" href="product_item.php?id=12">
