@@ -91,6 +91,12 @@ a:hover {
 	margin-left: auto;
 }
 
+.container3{
+	max-width: 50px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
 
 
 .display-flex { display:flex; }
